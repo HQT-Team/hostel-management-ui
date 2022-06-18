@@ -436,6 +436,21 @@ a {
   overflow: hidden;
 }
 
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .custom-form .spacer {
   margin: 16px 0;
   border-top: 0.2px solid rgba(0, 0, 0, 0.2);
@@ -481,7 +496,7 @@ a {
 
 .form-submit {
   color: var(--white-color);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   padding: 12px 0px;
   border-radius: 4px;
@@ -490,13 +505,14 @@ a {
 .content-group .content-bar {
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
 }
 .content-group .content-history {
   flex: 1;
   font-size: 1.8rem;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 0;
 }
 .content-group .content-history a {
   margin-right: 8px;
