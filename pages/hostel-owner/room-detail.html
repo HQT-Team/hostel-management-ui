@@ -1186,12 +1186,21 @@
                                                                         </div>
                                                                         <div
                                                                             class="modal-footer justify-content-between">
-                                                                            <!-- Start update member information button -->
-                                                                            <button type="button" class="btn btn-danger"
-                                                                                data-bs-toggle="modal"
-                                                                                data-bs-target="#update-member-infor-modal">
-                                                                                Cập nhật
-                                                                            </button>
+                                                                            <div>
+                                                                                <!-- Start update member information button -->
+                                                                                <button type="button"
+                                                                                    class="btn btn-danger"
+                                                                                    data-bs-toggle="modal"
+                                                                                    data-bs-target="#update-member-infor-modal">
+                                                                                    Cập nhật
+                                                                                </button>
+                                                                                <button type="button"
+                                                                                    class="btn btn-secondary"
+                                                                                    data-bs-toggle="modal"
+                                                                                    data-bs-target="#remove-member-modal">
+                                                                                    Xóa thành viên
+                                                                                </button>
+                                                                            </div>
                                                                             <!-- End update member information button -->
                                                                             <button type="button"
                                                                                 class="btn btn-primary"
@@ -1203,6 +1212,44 @@
                                                                 </div>
                                                             </div>
                                                             <!-- End modal member detail -->
+                                                            <!-- Start Remove member modal -->
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="remove-member-modal"
+                                                                tabindex="-1"
+                                                                aria-labelledby="remove-member-modal-label"
+                                                                aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title"
+                                                                                id="remove-member-modal-label">
+                                                                                Cảnh báo
+                                                                            </h5>
+                                                                            <button type="button" class="btn-close"
+                                                                                data-bs-dismiss="modal"
+                                                                                aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body pt-5 pb-5">
+                                                                            Bạn có chắc chắn là muốn xóa thành viên này
+                                                                            ra khỏi phòng?
+                                                                        </div>
+                                                                        <div
+                                                                            class="modal-footer justify-content-between">
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary"
+                                                                                data-bs-dismiss="modal">Hủy bỏ</button>
+                                                                            <form action="" method="POST">
+                                                                                <input type="hidden" name="" value="">
+                                                                                <button type="submit"
+                                                                                    class="btn btn-danger">
+                                                                                    Đồng ý
+                                                                                </button>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- End Remove member modal -->
                                                             <!-- Start Update member information modal -->
                                                             <div class="modal fade" id="update-member-infor-modal"
                                                                 tabindex="-1"

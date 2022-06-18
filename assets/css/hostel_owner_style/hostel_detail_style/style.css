@@ -411,7 +411,7 @@ footer {
 
 .content-group {
   min-height: var(--min-body-height);
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 .content-group .content-body {
   padding: 16px 16px;
