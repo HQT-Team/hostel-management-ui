@@ -467,6 +467,30 @@
         })
     </script>
 
+    <!-- Alert Modal -->
+    <div class="modal fade" id="alert-modal" tabindex="-1" aria-labelledby="alert-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-success" id="alert-modal-label">Thành công</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-5 pb-5">
+                    Bạn đã thêm phòng mới thành công!
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <a href="detailHostel?hostelID=" class="btn btn-secondary">Quay về khu trọ</a>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thêm tiếp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let alertModal = new bootstrap.Modal(document.getElementById('alert-modal'));
+        alertModal.show();
+    </script>
+
 </body>
 
 </html>

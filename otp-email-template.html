@@ -14,6 +14,21 @@
             padding: 0;
         }
 
+        html *::-webkit-scrollbar {
+            border-radius: 0;
+            width: 8px;
+        }
+
+        html *::-webkit-scrollbar-thumb {
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+
+        html *::-webkit-scrollbar-track {
+            border-radius: 0;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
         .mail {
             max-width: 600px;
             width: 100%;
@@ -210,11 +225,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         const copyToClipboard = (element) => {
-            var $temp = $("<input>");
-            $("body").append($temp);
-            $temp.val($(element).html()).select();
-            document.execCommand("copy");
-            $temp.remove();
+            navigator.clipboard.writeText($(element).html().trim());
         };
 
         $("#hqt-content__otp").click(() => {
