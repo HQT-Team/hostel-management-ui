@@ -67,6 +67,7 @@
   border: 0.5px solid var(--primary-color);
   color: var(--primary-color) !important;
   margin-right: 16px;
+  transition: background-color 0.2s ease;
 }
 .home-navbar__actions-link--login:hover {
   background: var(--primary-color);
