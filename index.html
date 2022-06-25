@@ -237,7 +237,7 @@
             loader.addEventListener("animationend", () => {
                 document.body.classList.remove('over-flow-hidden');
                 loader.style.display = 'none';
-            });
+            }, { once: true });
         });
     </script>
 </body>
