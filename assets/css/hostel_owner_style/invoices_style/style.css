@@ -484,6 +484,10 @@ footer {
   font-weight: 600;
   padding: 8px 12px;
 }
+.content__item .filter__wrapper table tr td span {
+  font-weight: 400 !important;
+  font-size: 1.6rem;
+}
 
 .content__item.active {
   display: block;
