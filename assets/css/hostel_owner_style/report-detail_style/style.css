@@ -458,6 +458,7 @@ footer {
 .report .report__action a,
 .report .report__action button {
   font-size: 1.8rem;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */
