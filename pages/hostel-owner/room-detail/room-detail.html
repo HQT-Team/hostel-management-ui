@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link rel="icon" href="../../assets/images/favicon/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="../../../assets/images/favicon/favicon.png" type="image/x-icon" />
 
     <!-- Title -->
     <title>Chi tiết phòng</title>
@@ -16,22 +16,32 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="../../assets/css/core_style/core.css">
+    <link rel="stylesheet" href="../../../assets/css/core_style/core.css">
 
     <!-- Link your CSS here -->
-    <link rel="stylesheet" href="../../assets/css/hostel_owner_style/room_detail_style/style.css">
+    <link rel="stylesheet" href="../../../assets/css/hostel_owner_style/room_detail_style/style.css">
 
 </head>
 
-<body>
+<body class="over-flow-hidden">
+
+    <!-- Loader -->
+    <div id="preloader">
+        <div class="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <div class="main-nav bg-white">
         <div class="container">
             <div class="row main-nav-body">
                 <div class="col-3 col-lg-3 col-xl-3 col-xxl-2">
                     <div class="main-nav__logo">
-                        <a href="" class="main-nav__logo-link">
-                            <img class="main-nav__logo-img" src="../../assets/images/logos/logo.png" alt="Logo">
+                        <a href="../dashboard.html" class="main-nav__logo-link">
+                            <img class="main-nav__logo-img" src="../../../assets/images/logos/logo.png" alt="Logo">
                         </a>
                     </div>
                 </div>
@@ -52,7 +62,7 @@
                                 <span class="infor__role">Chủ phòng trọ</span>
                             </div>
                             <div class="profile__avatar">
-                                <img class="avatar__img" src="../../assets/images/avatars/user-avatar.jpg"
+                                <img class="avatar__img" src="../../../assets/images/avatars/user-avatar.jpg"
                                     alt="User avatar image">
                             </div>
                         </div>
@@ -200,9 +210,9 @@
 
                 <!-- Profile dropdown -->
                 <div id="nav-profile-dropdown" class="profile__actions">
-                    <a href="" class="action__view-profile-link">
+                    <a href="../account/profile.html" class="action__view-profile-link">
                         <div class="action__image">
-                            <img src="../../assets/images/avatars/user-avatar.jpg" alt="">
+                            <img src="../../../assets/images/avatars/user-avatar.jpg" alt="">
                         </div>
                         <div class="action__content">
                             <div class="title">Nguyễn Lâm Thảo Tâm</div>
@@ -210,7 +220,7 @@
                         </div>
                     </a>
                     <div class="spacer"></div>
-                    <a href="" class="action__logout">
+                    <a href="../../system/login.html" class="action__logout">
                         <div class="action__image">
                             <i class="fa-solid fa-arrow-right-from-bracket"></i>
                         </div>
@@ -230,33 +240,45 @@
             <div class="col-12 col-lg-3 col-xl-3 col-xxl-2">
                 <div id="main-side-bar" class="side-bar pt-5">
                     <div class="group-option">
-                        <a href="" class="group-option__link">
+                        <a href="../dashboard.html" class="group-option__link">
                             <i class="group-option__icon fa-solid fa-gauge-high"></i>
                             <div class="group-option__label">Tổng quan</div>
                         </a>
                     </div>
-                    <div class="group-option">
-                        <a href="./hostel.html" class="group-option__link">
+                    <div class="group-option active">
+                        <a href="../list-hostels/hostel-list.html" class="group-option__link">
                             <i class="group-option__icon fa-solid fa-hotel"></i>
                             <div class="group-option__label">Khu trọ</div>
                         </a>
                     </div>
-                    <div class="group-option active">
-                        <a href="" class="group-option__link">
+                    <div class="group-option">
+                        <a href="../list-rooms/room-list.html" class="group-option__link">
                             <i class="group-option__icon fa-solid fa-door-open"></i>
                             <div class="group-option__label">Phòng trọ</div>
                         </a>
                     </div>
                     <div class="group-option">
-                        <a href="" class="group-option__link">
+                        <a href="../notifications/notifications.html" class="group-option__link">
                             <i class="group-option__icon fa-solid fa-envelope-open-text"></i>
                             <div class="group-option__label">Thông báo</div>
                         </a>
                     </div>
                     <div class="group-option">
-                        <a href="" class="group-option__link">
+                        <a href="../reports/reports.html" class="group-option__link">
                             <i class="group-option__icon fa-solid fa-triangle-exclamation"></i>
                             <div class="group-option__label">Báo cáo</div>
+                        </a>
+                    </div>
+                    <div class="group-option">
+                        <a href="../invoices/invoices.html" class="group-option__link">
+                            <i class="group-option__icon fa-solid fa-file-invoice-dollar"></i>
+                            <div class="group-option__label">Hóa đơn</div>
+                        </a>
+                    </div>
+                    <div class="group-option">
+                        <a href="../account/profile.html" class="group-option__link">
+                            <i class="group-option__icon fa-solid fa-user"></i>
+                            <div class="group-option__label">Tài khoản</div>
                         </a>
                     </div>
                 </div>
@@ -266,9 +288,9 @@
             <div class="col-12 col-lg-9 col-xl-9 col-xxl-10 col-xxl-10 content-group">
                 <!-- History link bar -->
                 <div class="content-history">
-                    <a href="./hostel.html" class="history-link">Danh sách khu trọ</a>
+                    <a href="../list-hostels/hostel-list.html" class="history-link">Danh sách khu trọ</a>
                     <i class="fa-solid fa-chevron-right"></i>
-                    <a href="./hostel-detail.html" class="history-link">NovaLand Sky</a>
+                    <a href="../list-hostels/hostel-detail.html" class="history-link">NovaLand Sky</a>
                     <i class="fa-solid fa-chevron-right"></i>
                     <div class="current">Phòng 11</div>
                 </div>
@@ -384,12 +406,13 @@
                                 <!-- End update room information button -->
 
                                 <!-- Start calculate button button -->
-                                <button class="action-calculate-btn">Tính tiền phòng</button>
+                                <button class="action-calculate-btn d-none">Tính tiền phòng</button>
                                 <!-- End calculate button button -->
 
                                 <!-- Hide this button when room already rented -->
                                 <!-- Start create account button -->
-                                <a href="" class="action-create-account-link d-none">Tạo tài khoản</a>
+                                <a href="./room-create-account.html" class="action-create-account-link">Tạo tài
+                                    khoản</a>
                                 <!-- End create account button -->
                                 <a href="" class="action-create-account-link d-none">Xem mã tham gia</a>
                             </div>
@@ -773,9 +796,16 @@
                                         </div>
                                         <div class="right-actions">
 
-                                            <button class="invoice-action-btn list-invoices-btn">
+                                            <!-- <button class="invoice-action-btn list-invoices-btn">
                                                 Danh sách hóa đơn
-                                            </button>
+                                            </button> -->
+                                            <!-- Remove this a tag and using button tag above when implement -->
+                                            <a href="./room-list-invoices.html"
+                                                class="invoice-action-btn list-invoices-btn text-center"
+                                                onMouseOver="this.style.color='#fff'"
+                                                onMouseOut="this.style.color='#fff'">
+                                                Danh sách hóa đơn
+                                            </a>
 
                                             <!-- If this invoice has been paid, please hide this button -->
                                             <!-- Start invoice confirm paid button -->
@@ -1793,11 +1823,13 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <!-- JQuery -->
-    <script src="../../assets/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+    <script src="../../../assets/js/jquery-3.5.1.min.js" type="text/javascript"></script>
     <!-- Link your script here -->
-    <script src="../../assets/js/handle-main-navbar.js"></script>
-    <script src="../../assets/js/valid-form.js"></script>
-    <script src="../../assets/js/owner/room-detail/validate-input.js"></script>
+    <script src="../../../assets/js/handle-main-navbar.js"></script>
+    <script src="../../../assets/js/valid-form.js"></script>
+    <script src="../../../assets/js/owner/room-detail/validate-input.js"></script>
+    <!-- Preload -->
+    <script src="../../../assets/js/handle-preloader.js" type="text/javascript"></script>
 </body>
 
 </html>
