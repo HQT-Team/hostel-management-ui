@@ -434,32 +434,42 @@ footer {
   margin: 8px 0 24px;
 }
 
-.hostel-table .hostel-table__body .hostel-table__body-link-detail,
-.hostel-table .hostel-table__body .hostel-table__body-link-room-list,
-.hostel-table .hostel-table__body .hostel-table__body-btn-edit {
-  display: block;
-  width: 100%;
-  text-align: center;
-  font-size: 1.8rem;
-  line-height: 1.8rem;
-  background-color: transparent;
+.hostel-list__items {
+  overflow-x: auto;
 }
-.hostel-table .hostel-table__body .hostel-table__body-link-detail {
+
+.hostel-table {
+  width: 100%;
+  min-width: 600px;
+}
+.hostel-table .hostel-table__body .hostel-table__body-link .hostel-table__body-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.hostel-table .hostel-table__body .hostel-table__body-link .hostel-table__body-wrapper .hostel-table__body-link-detail,
+.hostel-table .hostel-table__body .hostel-table__body-link .hostel-table__body-wrapper .hostel-table__body-btn-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 100%;
+  font-size: 2.4rem;
+  background-color: transparent;
+  height: 100%;
+}
+.hostel-table .hostel-table__body .hostel-table__body-link .hostel-table__body-wrapper .hostel-table__body-link-detail {
   color: #008000;
 }
-.hostel-table .hostel-table__body .hostel-table__body-link-detail:hover {
+.hostel-table .hostel-table__body .hostel-table__body-link .hostel-table__body-wrapper .hostel-table__body-link-detail:hover {
   color: #00b900;
 }
-.hostel-table .hostel-table__body .hostel-table__body-link-room-list {
-  color: var(--primary-color);
-}
-.hostel-table .hostel-table__body .hostel-table__body-link-room-list:hover {
-  color: rgb(109, 170, 255);
-}
-.hostel-table .hostel-table__body .hostel-table__body-btn-edit {
+.hostel-table .hostel-table__body .hostel-table__body-link .hostel-table__body-wrapper .hostel-table__body-btn-edit {
   color: var(--error-color);
 }
-.hostel-table .hostel-table__body .hostel-table__body-btn-edit:hover {
+.hostel-table .hostel-table__body .hostel-table__body-link .hostel-table__body-wrapper .hostel-table__body-btn-edit:hover {
   color: rgb(255, 126, 126);
 }
 

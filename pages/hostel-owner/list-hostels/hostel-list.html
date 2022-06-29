@@ -305,61 +305,37 @@
                             </a>
                         </div>
                     </div>
-                    <div class="content-body">
+                    <div class="content-body mb-5">
                         <div class="hostel-list">
                             <div class="hostel-list__header">
                                 Các khu trọ hiện tại
                             </div>
                             <div class="hostel-list__items mt-4">
                                 <table id="hostel-table"
-                                    class="mt-4 mb-4 table table-hover table-bordered table-striped hostel-table">
+                                    class="mt-4 table table-hover table-bordered table-striped hostel-table">
                                     <thead class="table-dark">
                                         <tr>
                                             <th>STT</th>
                                             <th>Tên</th>
                                             <th>Địa chỉ</th>
-                                            <th>Hành động</th>
-                                            <th>Hành động</th>
+                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-light hostel-table__body">
                                         <tr>
                                             <td>1</td>
                                             <td>Nova Land</td>
-                                            <td>226 Điện Biên Phủ, quận Bình Thạnh, TP. Hồ Chí Minh</td>
-                                            <td>
-                                                <a href="./hostel-detail.html"
-                                                    class="hostel-table__body-link-detail">Chi tiết</a>
-                                            </td>
-                                            <td>
-                                                <a href="./update-hostel.html" class="hostel-table__body-btn-edit">Chỉnh
-                                                    sửa</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Yumei Land</td>
-                                            <td>229 Chường Trinh, quận Đống Đa, Hà Nội</td>
-                                            <td>
-                                                <a href="./hostel-detail.html"
-                                                    class="hostel-table__body-link-detail">Chi tiết</a>
-                                            </td>
-                                            <td>
-                                                <a href="./update-hostel.html" class="hostel-table__body-btn-edit">Chỉnh
-                                                    sửa</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Rengoku Kyojuro</td>
-                                            <td>119 Lê Văn Việt, quận 9, TP. Hồ Chí Minh</td>
-                                            <td>
-                                                <a href="./hostel-detail.html"
-                                                    class="hostel-table__body-link-detail">Chi tiết</a>
-                                            </td>
-                                            <td>
-                                                <a href="./update-hostel.html" class="hostel-table__body-btn-edit">Chỉnh
-                                                    sửa</a>
+                                            <td>226 Điện Biên Phủ, quận Bình Thạnh, thành phố Hồ Chí Minh</td>
+                                            <td class="hostel-table__body-link">
+                                                <div class="hostel-table__body-wrapper">
+                                                    <a href="./hostel-detail.html"
+                                                        class="hostel-table__body-link-detail">
+                                                        <i class="fa-solid fa-building-circle-arrow-right"></i>
+                                                    </a>
+                                                    <a href="./update-hostel.html"
+                                                        class="hostel-table__body-btn-edit"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -399,7 +375,13 @@
     <script>
         $(document).ready(function () {
             // Initial datatable
-            $('#hostel-table').DataTable();
+            $('#hostel-table').DataTable({
+                columnDefs: [
+                    { orderable: false, targets: 0 },
+                    { orderable: false, targets: 3 }
+                ],
+                "order": [],
+            });
         });
     </script>
     <!-- Preload -->
