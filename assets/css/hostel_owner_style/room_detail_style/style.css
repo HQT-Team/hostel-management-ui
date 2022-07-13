@@ -304,7 +304,6 @@
   .main-nav__label .title {
     display: none;
   }
-
   .profile .profile__infor {
     display: none;
   }
@@ -792,11 +791,9 @@ footer {
   .left-actions {
     width: 155px;
   }
-
   .right-actions {
     flex-direction: column;
   }
-
   .list-invoices-btn {
     margin-right: 0px;
     margin-bottom: 8px;
@@ -806,7 +803,6 @@ footer {
   .room-consume {
     margin-bottom: 16px;
   }
-
   .left-actions {
     width: 420px;
   }
@@ -815,11 +811,9 @@ footer {
   .left-actions {
     width: 254px;
   }
-
   .room-information .room-information__right {
     text-align: left;
   }
-
   .tablet-display-none {
     display: none;
   }
@@ -828,35 +822,28 @@ footer {
   .content-group .content-history {
     font-size: 1.5rem;
   }
-
   .invoice-header {
     display: block;
   }
-
   .invoice-created-date {
     margin-top: 8px;
   }
-
   .invoice-actions {
     display: block;
   }
-
   .left-actions {
     width: 100%;
   }
-
   .invoice-detail-btn {
     width: 100%;
     margin-bottom: 8px;
   }
-
   .members-header {
     display: block;
   }
   .members-header .members-actions .add-member-btn {
     margin-top: 8px;
   }
-
   .mobile-display-none {
     display: none;
   }
@@ -867,7 +854,6 @@ footer {
     justify-content: end;
     align-items: end;
   }
-
   .action-update-btn {
     margin-right: 0 !important;
     margin-bottom: 8px;

@@ -350,7 +350,6 @@ footer .wrapper {
   .banner-hostel-owner-wrapper .banner-left {
     padding-right: 60px;
   }
-
   .banner-subtitle {
     width: 90%;
   }
@@ -369,27 +368,22 @@ footer .wrapper {
   .home-navbar__mobile-btn {
     display: flex;
   }
-
   .banner-hostel-owner-wrapper {
     border-bottom: 1px solid #eee;
     padding-bottom: 60px;
   }
-
   .home-navbar__links {
     display: none;
   }
-
   .banner-subtitle {
     width: 100%;
   }
-
   .banner-right,
 .banner-left {
     padding: 0 !important;
     align-items: center;
     text-align: center;
   }
-
   .banner-image {
     width: 80%;
   }

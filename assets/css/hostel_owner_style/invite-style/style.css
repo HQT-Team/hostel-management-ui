@@ -304,7 +304,6 @@
   .main-nav__label .title {
     display: none;
   }
-
   .profile .profile__infor {
     display: none;
   }
@@ -539,12 +538,10 @@ footer {
   .invite-header {
     flex-direction: column;
   }
-
   .invite-recreate-btn {
     margin-left: 0;
     margin-top: 16px;
   }
-
   .invite-qr-img {
     width: 200px;
   }
