@@ -28,6 +28,11 @@
   );
 }
 
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+
 // Reset css
 * {
   margin: 0;
