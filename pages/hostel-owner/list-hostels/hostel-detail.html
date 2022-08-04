@@ -294,7 +294,7 @@
                     <i class="fa-solid fa-chevron-right"></i>
                     <div class="current">NovaLand Sky</div>
                 </div>
-                <div class="content-body">
+                <div class="content-body mb-5">
                     <div class="hostel-header">
                         <!-- Hostel information -->
                         <div class="hostel-infor">
@@ -370,6 +370,33 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="upload-file-section col-12 col-md-8 col-lg-7 col-xl-6">
+                        <div class="upload-wrapper">
+                            <h1>Thêm phòng trọ bằng file Excel</h1>
+                            <h3 class="success mb-4">Thêm file vào hệ thống thành công!</h3>
+                            <form action="" method="POST" enctype="multipart/form-data">
+                                <input class="form-control" type="file" name="file"
+                                    accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+                                <button class="btn btn-primary fs-3" type="submit">Tải file lên hệ thống</button>
+                            </form>
+                            <form action="" method="GET" class="d-none">
+                                <input type="hidden" value="" name="fileName">
+                                <button class="btn btn-primary fs-3" type="submit">
+                                    Thêm phòng trọ từ tệp excel đã tải lên
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="upload-file-section col-12 col-md-4 col-lg-5 col-xl-6 d-none">
+                        <div class="upload-wrapper">
+                            <h1>Kết quả thêm phòng</h1>
+                            <h3 class="success mb-4 fw-normal">
+                                Thêm phòng xx thành công
+                            </h3>
                         </div>
                     </div>
                 </div>
